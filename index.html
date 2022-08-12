@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newapp</title>
+</head>
+<body onload="getUserEmail()">
+    <h2 id="Hello man"></h2>
+    <br>
+    <button type="button" onclick="SingOut()">Sign Out</button>
+    <br>
+    <br>
+    <button type="button" onclick="location.href = 'singup.html';" >Create new account</button>
+
+    
+</body>
+
+ <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+ <script src="app.js"></script>
+
+
+  
+</html>
