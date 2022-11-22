@@ -51,7 +51,7 @@ function Login(){
     console.log(user.email,user.password)
    // window.location.replace("index.html")
     // ...
-    newDoc()
+   // newDoc()
   })
   .catch((error) => {
     var errorCode = error.code;
