@@ -49,7 +49,7 @@ function Login(){
     // Signed in
     var user = userCredential.user;
     console.log(user.email,user.password)
-    window.location.replace("index.html")
+   // window.location.replace("index.html")
     // ...
     newDoc()
   })
