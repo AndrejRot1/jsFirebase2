@@ -34,7 +34,7 @@ function addUser(){
     console.log(email,password,password2)
    firebase.auth().currentUser.sendEmailVerification()
     .then(() => {
-      // Email verification sent!
+      console.log('e-mail send');
       // ...
     });
  //   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
