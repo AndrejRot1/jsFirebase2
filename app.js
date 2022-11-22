@@ -32,9 +32,9 @@ function addUser(){
 
   if (password == password2){
     console.log(email,password,password2)
-   firebase.auth().currentUser.sendEmailVerification()
+    firebase.auth().currentUser.sendEmailVerification()
     .then(() => {
-      console.log('e-mail send');
+      // send mail
       // ...
     });
  //   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
