@@ -34,11 +34,11 @@ function addUser(){
     console.log(email,password,password2)
   
    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    firebase.auth().currentUser.sendEmailVerification()
      console.log(error.code);
       console.log(error.message);
    });
   }
-  firebase.auth().currentUser.sendEmailVerification()
 
 }
 
