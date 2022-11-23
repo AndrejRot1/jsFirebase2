@@ -17,7 +17,7 @@ const database = firebase.database(app);
 const auth = firebase.auth()
 
 function send_email(){
- firebase.auth().currentUser.sendEmailVerification(auth.currentUser);
+ firebase.auth().currentUser.sendEmailVerification(auth.currentUser)
 }
  
  
