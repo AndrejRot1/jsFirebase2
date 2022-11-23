@@ -37,7 +37,7 @@ function addUser(){
      console.log(error.code);
       console.log(error.message);
    });
-    firebase.auth().currentUser.sendEmailVerification(auth.currentUser)
+    firebase.auth().currentUser.sendEmailVerification(auth.currentUser[email])
   }
 
 }
