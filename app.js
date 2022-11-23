@@ -33,7 +33,7 @@ const auth = firebase.auth()
     },
     dynamicLinkDomain: 'example.page.link'
   };
- firebase.auth().currentUser.sendEmailVerification(auth.currentUser,actionCodeSettings)
+ firebase.auth().currentUser.sendEmailVerification(auth.currentUser)
 }
  
  
