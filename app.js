@@ -43,8 +43,6 @@ function addUser(){
       console.log(error.message);
    });
     await send_email();
-   
-   
   }
 
 }
