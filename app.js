@@ -42,7 +42,7 @@ function addUser(){
      console.log(error.code);
       console.log(error.message);
    });
-    await send_email();
+    send_email();
   }
 
 }
