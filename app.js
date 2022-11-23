@@ -16,7 +16,7 @@ const app = firebase.initializeApp(firebaseConfig);
 const database = firebase.database(app);
 const auth = firebase.auth()
 
-async function send_email(){
+ function sendmail(){
  firebase.auth().currentUser.sendEmailVerification(auth.currentUser)
 }
  
