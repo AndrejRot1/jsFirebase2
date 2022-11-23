@@ -15,6 +15,11 @@
 const app = firebase.initializeApp(firebaseConfig);
 const database = firebase.database(app);
 const auth = firebase.auth()
+
+function send_email(){
+ firebase.auth().currentUser.sendEmailVerification(auth.currentUser);
+}
+ 
  
 
 function addUser(){
@@ -37,7 +42,9 @@ function addUser(){
      console.log(error.code);
       console.log(error.message);
    });
-    await firebase.auth().currentUser.sendEmailVerification(auth.currentUser)
+    await send_email();
+   
+   
   }
 
 }
